@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+.catalog {
+    display: flex;/*объявление flex контейнера*/
+    flex-wrap: nowrap;/*разрешаем перенос на новую строку*/
+    justify-content: center;/*горизонатльное выравнивание по центру */
+  }
+  
+  .set {
+    width: 300px;/*ширина для карточки*/
+    margin: 20px;
+    padding: 30px;
+    background-color: lightgray;/*задний фон карточки*/
+    text-align: center;
+    border: 2px solid gray;  
+    transition: transform 0.3s ease-in-out;/*анимация для эффекта 
+    преобразовании карточи*/
+  }
+  .set:hover {
+    transform: scale(1.05);/*преобразование карточки - увеличение в 1.05 раз*/
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+  }
+  .set img {/* обращаемся к фото, которая 
+    находиться внутри тега с классмо set*/
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid gray;  
+  }
+  .set h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;  
+  }
+  .set p {
+    margin-bottom: 20px;
+    color: #666; 
+  }
+  .btn-more {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none; /*убираем нижнее подчеркивание у ссылки*/
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  .btn-more:hover {
+    background-color: #0052a3;
+  }
+  .menu-item{position:center;
+    padding: 1em;
+    }
+
+    /*1 zad*/
+body{/*убираем все отступы, чтобы не было белой обводки от краев сайта, документа */
+    margin: 0;
+    padding: 0;
+    font-family:Century Gothic; 
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(113, 79, 238);/*задаем рамку снизу*/
+    background: #fff;/*задаем фон блоку*/
+    width: 100%;/*во всю ширину*/
+  }
+  
+  .menu-list {
+    display: flex;
+    list-style-type: none;/*убираем точки*/
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+  }
+  
+  .menu-item {
+    position: relative;/*задает относительное поз. родительского элемента*/
+    padding: 0 1em;/* .menu-list  font-size: 22px;*/
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block; /*блокировка позиционирования*/
+    padding: 0.75em 1.5em;
+  }
+
+
+  /*2 zad*/
+  .submenu {
+    list-style-type: none;
+    border-top: 1px solid black;
+    display: none; /*убирает выдимость блока*/
+    position: absolute;/*абсолютное позиционированние элемента на странице*/
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  
+  .menu-item:hover .submenu {
+    display: block;
+    
+  }
+  
+  /*3 zad*/
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1.5em;
+    transition: color 0.3s ease;
+  }
+  .menu-item a:hover {
+    color: #0088cc;
+  }
+  
+  /*4 zad*/
+  .menu-item:hover .submenu {
+    width: 100%;
+    background-color: #a6a6a6;
+  }
+
+  .gon{background-image: url(https://www.sas.com/en_us/training/academy-data-science/_jcr_content/par/styledcontainer_ced3/image.img.jpg/1668002598268.jpg);}
